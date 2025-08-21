@@ -2,6 +2,14 @@
 // 1. O que é JavaScript e para que é utilizado
 // =======================================================
 
+// JavaScript é uma linguagem de programação interpretada e de tipagem dinâmica, usada principalmente para dar interatividade a páginas web.
+// Hoje em dia, também é utilizado para:
+
+// Frontend → adicionar lógica em páginas web.
+// Backend → com Node.js.
+// Aplicações Mobile/Desktop → frameworks como React Native, Electron.
+// IoT e até Inteligência Artificial.
+
 // console.log("Olá, JavaScript! 🚀");
 
 // =======================================================
