@@ -10,6 +10,11 @@
 // Aplicações Mobile/Desktop → frameworks como React Native, Electron.
 // IoT e até Inteligência Artificial.
 
+// JavaScript pode ser executado em dois ambientes principais:
+// Navegadores Web: Cada navegador possui um motor JavaScript que interpreta e executa o código. Exemplo: V8 (Chrome e Node.js), SpiderMonkey (Firefox). Esses motores possuem componentes que analisam, compilam e otimizam o código.
+
+// Servidores: Node.js é uma plataforma que permite a execução de JavaScript no servidor. Ele utiliza o motor V8 para executar o código JavaScript fora do navegador, permitindo a construção de aplicações web completas.
+
 // console.log("Olá, JavaScript! 🚀");
 
 // =======================================================
@@ -17,6 +22,7 @@
 // =======================================================
 
 // let nome = "Pedro";
+
 // const anoNascimento = 2000;
 
 // console.log("Nome:", nome);
@@ -26,11 +32,11 @@
 // 3. Tipos primitivos
 // =======================================================
 
-// let texto = "JavaScript";   // String
-// let numero = 42;            // Number
-// let estaLogado = true;      // Boolean
-// let valorNulo = null;       // Null
-// let indefinido;             // Undefined
+// let texto = "JavaScript"; // String
+// let numero = 42; // Number
+// let estaLogado = true; // Boolean
+// let valorNulo = null; // Null
+// let indefinido; // Undefined
 
 // console.log(typeof texto);
 // console.log(typeof numero);
@@ -55,11 +61,13 @@
 // 5. Operadores de atribuição
 // =======================================================
 
-// let x = 10;
+let x = 10;
 // x += 5;
+// x = x + 5;
 // console.log("x += 5 →", x);
 
 // x -= 2;
+// x = x - 2;
 // console.log("x -= 2 →", x);
 
 // x *= 3;
@@ -72,7 +80,8 @@
 // 6. Operadores aritméticos
 // =======================================================
 
-// let a = 10, b = 3;
+// let a = 10;
+// let b = 2;
 // console.log("Soma:", a + b);
 // console.log("Subtração:", a - b);
 // console.log("Multiplicação:", a * b);
@@ -85,7 +94,7 @@
 // =======================================================
 
 // let maiorDeIdade = true;
-// let temCarteira = false;
+// let temCarteira = true;
 
 // console.log("maiorDeIdade && temCarteira:", maiorDeIdade && temCarteira);
 // console.log("maiorDeIdade || temCarteira:", maiorDeIdade || temCarteira);
@@ -99,12 +108,20 @@
 
 // IF / ELSE
 let idade = 18;
+// let idadeMaisVelho = "18";
 
-if (idade >= 18) {
-  console.log("Você é maior de idade.");
-} else {
-  console.log("Você é menor de idade.");
-}
+// (==) não faz verificação de tipo
+// (===) faz verificação de tipo
+
+// console.log(idade === idadeMaisVelho);
+
+// if (idade > 18) {
+//   console.log("Você é maior de idade.");
+// } else if (idade === 18) {
+//   console.log("Voce acabou de fazer 18 anos");
+// } else {
+//   console.log("Você é menor de idade.");
+// }
 
 // ELSE IF
 // let nota = 75;
@@ -118,7 +135,7 @@ if (idade >= 18) {
 // }
 
 // Operador ternário
-// let acesso = (idade >= 18) ? "Permitido" : "Negado";
+// let acesso = idade >= 18 ? "Permitido" : "Negado";
 // console.log(acesso);
 
 // ===============================
@@ -128,9 +145,9 @@ if (idade >= 18) {
 // O switch/case é usado para comparar um valor contra várias possibilidades
 // de forma mais organizada do que vários if/else if encadeados.
 
-// let diaSemana = 3;
+let diaSemana = 3;
 
-// switch(diaSemana) {
+// switch (diaSemana) {
 //   case 1:
 //     console.log("Domingo");
 //     break;
@@ -161,12 +178,24 @@ if (idade >= 18) {
 // 9. Estruturas de repetição
 // =======================================================
 
+// i++ (i = i + 1)
+
 // for (let i = 1; i <= 5; i++) {
 //   console.log("Número:", i);
 // }
 
 // let contador = 1;
-// while (contador <= 5) {
-//   console.log("Contando:", contador);
-//   contador++;
+let temCarteira = true;
+let nome = false;
+
+console.log((temCarteira && nome) || temCarteira);
+// do {
+//   console.log("teste");
+//   //   contador++;
+// } while (contador === 2);
+
+// while (contador === 2) {
+//   console.log("teste");
+//   //   contador = contador + 1;
+//   //   contador++;
 // }
