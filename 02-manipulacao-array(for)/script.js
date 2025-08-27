@@ -1,5 +1,5 @@
 // ===========================================
-// Aula 2 - JavaScript
+// JavaScript
 // Tópicos:
 //  - Lógica de programação e algoritmos
 //  - Template literals
@@ -20,7 +20,7 @@ let numero1 = 10;
 let numero2 = 20;
 let soma = numero1 + numero2;
 
-console.log("O resultado da soma é:", soma);
+// console.log("O resultado da soma é:", soma);
 // Esse é um algoritmo bem simples:
 // 1 - Definimos os números
 // 2 - Somamos
@@ -32,18 +32,18 @@ console.log("O resultado da soma é:", soma);
 // Template literals permitem interpolar variáveis dentro de strings.
 // Usamos crase (`) em vez de aspas.
 
-// let nome = "Maria"
-// let idade = 25
+let nome = "Maria";
+let idade = 25;
 
-// console.log("Com concatenação tradicional: " + nome + " tem " + idade + " anos.")
+// console.log(nome + "tem" + idade + " anos.");
 // console.log(`Com template literals: ${nome} tem ${idade} anos.`)
 
 // Também podemos quebrar linhas facilmente:
 // let mensagem = `Olá, ${nome}!
 // Você tem ${idade} anos.
-// Bem-vinda ao curso de JavaScript!`
+// Bem-vinda ao curso de JavaScript!`;
 
-// console.log(mensagem)
+// console.log(mensagem);
 
 // -------------------------------
 // Arrays
@@ -51,18 +51,18 @@ console.log("O resultado da soma é:", soma);
 // Arrays são listas que armazenam vários valores.
 // Exemplo: lista de frutas
 
-// let frutas = ["maçã", "banana", "laranja", "uva"]
+// let frutas = ["maçã", "banana", "laranja", "uva", "abacate", "mamão"];
 
-// console.log("Lista completa de frutas:", frutas)
-// console.log("Primeira fruta:", frutas[0])  // índice começa em 0
-// console.log("Última fruta:", frutas[frutas.length - 1])
+// console.log("Lista completa de frutas:", frutas);
+// console.log("Primeira fruta:", frutas[3]); // índice começa em 0
+// console.log("Última fruta:", frutas[frutas.length - 1]);
 
 // // Adicionando e removendo elementos
-// frutas.push("abacaxi") // adiciona no final
-// console.log("Após adicionar abacaxi:", frutas)
+// frutas.push("abacaxi"); // adiciona no final
+// console.log("Após adicionar abacaxi:", frutas);
 
-// frutas.pop() // remove o último
-// console.log("Após remover o último:", frutas)
+// frutas.pop(); // remove o último
+// console.log("Após remover o último:", frutas);
 
 // -------------------------------
 // Estrutura de repetição for (com arrays)
@@ -71,10 +71,10 @@ console.log("O resultado da soma é:", soma);
 // Exemplo: exibir todas as frutas da lista
 
 // for (let i = 0; i < frutas.length; i++) {
-//   console.log(`Fruta ${i + 1}: ${frutas[i]}`)
+//   console.log(`Fruta ${i + 1}: ${frutas[i]}`);
 // }
 
 // // Outra forma mais moderna é o "for...of":
-// for (let fruta of frutas) {
-//   console.log("Fruta usando for...of:", fruta)
+// for (let teste of frutas) {
+//   console.log("Fruta usando for...of:", teste);
 // }
