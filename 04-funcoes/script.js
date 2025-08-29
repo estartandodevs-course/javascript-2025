@@ -55,25 +55,7 @@
 // console.log(quadrado(7)); // 49
 
 // ---------------------------
-// 5. Arrow Functions em Arrays (com métodos de ordem superior)
-// ---------------------------
-const numeros = [1, 2, 3, 4, 5];
-
-// // Usando map para criar um novo array com os números dobrados
-// const dobrados = numeros.map((numero, index) => `Indice ${index}: ${numero * 2}`);
-// console.log("Números dobrados:", dobrados); // [2, 4, 6, 8, 10]
-
-// // Usando filter para pegar apenas números pares
-// const pares = numeros.find((numero) => numero % 2 === 0);
-
-// console.log("Números pares:", pares); // [2, 4]
-
-// // Usando reduce para somar todos os elementos
-// const somaTotal = numeros.reduce((acc, n) => acc + n, 0);
-// console.log("Soma total:", somaTotal); // 15
-
-// ---------------------------
-// 6. Diferença importante: THIS em funções normais vs Arrow Functions
+// 5. Diferença importante: THIS em funções normais vs Arrow Functions
 // ---------------------------
 // const objeto = {
 //   nome: "Estartando Devs",
@@ -91,7 +73,7 @@ const numeros = [1, 2, 3, 4, 5];
 // console.log(objeto.descricaoArrow()); // "Este é o undefined"
 
 // ---------------------------
-// 7. Funções como parâmetros (callback functions)
+// 6. Funções como parâmetros (callback functions)
 // ---------------------------
 // function executarOperacao(a, b, operacao) {
 //   return operacao(a, b);
@@ -104,5 +86,37 @@ const numeros = [1, 2, 3, 4, 5];
 //   })
 // ); // 5
 
-// // Chamando com arrow function
+// // // Chamando com arrow function
 // console.log(executarOperacao(10, 5, (x, y) => x + y)); // 15
+
+// ---------------------------
+// 7. Controle de Erros com try/catch/finally
+// ---------------------------
+// function divisaoSegura(dividendo, divisor) {
+//   console.log(`\nTentando dividir ${dividendo} por ${divisor}...`);
+
+//   if (divisor === 0) {
+//     // A palavra-chave 'throw' cria e lança uma exceção (erro).
+//     // A execução da função para aqui e o controle passa para o bloco 'catch' mais próximo.
+//     throw new Error("Divisão por zero não é permitida!");
+//   }
+
+//   // Este código só é alcançado se nenhum erro for lançado.
+//   return dividendo / divisor;
+// }
+
+// function calcular(dividendo, divisor) {
+//   try {
+//     console.log("Iniciando o bloco try...");
+//     const resultado = divisaoSegura(dividendo, divisor);
+//     console.log(`✅ Sucesso! O resultado é: ${resultado}`);
+//   } catch (erro) {
+//     // Este bloco só será executado quando a função lançar um erro.
+//     console.error(`❌ Erro capturado: ${erro.message}`);
+//   } finally {
+//     console.log("Bloco 'finally' executado.");
+//   }
+// }
+
+// calcular(10, 2);
+// calcular(10, 0); // Esta chamada vai lançar um erro.

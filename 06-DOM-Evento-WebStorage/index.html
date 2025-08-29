@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de JavaScript e DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="main-title">Minha Lista de Tarefas Interativa</h1>
+      </header>
+
+      <section class="input-section">
+        <input
+          type="text"
+          id="item-input"
+          placeholder="Digite uma nova tarefa..."
+        />
+        <button id="add-item-btn">Adicionar</button>
+      </section>
+
+      <section class="list-section">
+        <h2>Tarefas</h2>
+        <ul id="task-list"></ul>
+        <button id="remove-last-btn">Remover Última</button>
+      </section>
+
+      <section class="storage-section">
+        <h2>Web Storage</h2>
+        <p>Salva e carrega um nome de usuário no navegador.</p>
+        <button id="save-btn">Salvar Usuário</button>
+        <button id="load-btn">Carregar Usuário</button>
+        <button id="clear-btn">Limpar Dados</button>
+        <p id="storage-status"></p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
